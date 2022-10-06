@@ -39,6 +39,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLo-7X-IKE">
+                                <rect key="frame" x="173" y="620" width="69" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <segue destination="KrR-nN-Nf4" kind="presentation" id="gNs-dd-btt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,6 +56,7 @@
                             <outletCollection property="gestureRecognizers" destination="r6T-Og-77z" appends="YES" id="uF6-TO-NrQ"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="hbG-4v-Gv1"/>
                     <connections>
                         <outlet property="backLabel" destination="tHX-DK-Ixp" id="S3w-rQ-r5Q"/>
                         <outlet property="card" destination="AOm-ZV-Kn2" id="VHA-ap-QPE"/>
@@ -60,7 +70,72 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="-1219" y="93"/>
+        </scene>
+        <!--Creation View Controller-->
+        <scene sceneID="SkV-Hp-Yzu">
+            <objects>
+                <viewController id="yjj-IS-1e1" customClass="CreationViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YU2-hX-b7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9h-YG-Bxn">
+                                <rect key="frame" x="64" y="159" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LIy-ab-Kvj">
+                                <rect key="frame" x="64" y="226" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y3A-UN-MCQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2HW-5G-eMo">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="qPD-79-QYH">
+                            <connections>
+                                <action selector="didTapOnCancel:" destination="yjj-IS-1e1" id="2E5-UX-sTM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="lMN-h8-s9O">
+                            <connections>
+                                <action selector="didTapOnDone:" destination="yjj-IS-1e1" id="RtL-C2-KJr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="LIy-ab-Kvj" id="vGd-9i-a41"/>
+                        <outlet property="questionTextField" destination="V9h-YG-Bxn" id="wk1-Rp-8wt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mj3-s0-0y9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KjF-Ie-0ct">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KrR-nN-Nf4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O0k-kJ-H2g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yjj-IS-1e1" kind="relationship" relationship="rootViewController" id="1fQ-2V-zhC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGm-1Z-hUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="92"/>
         </scene>
     </scenes>
     <resources>

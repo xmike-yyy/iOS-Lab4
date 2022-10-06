@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690244C128EE989B0080E2B4 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690244C028EE989B0080E2B4 /* CreationViewController.swift */; };
 		692A099C28D16DF80037A014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692A099B28D16DF80037A014 /* AppDelegate.swift */; };
 		692A099E28D16DF80037A014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692A099D28D16DF80037A014 /* SceneDelegate.swift */; };
 		692A09A028D16DF80037A014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692A099F28D16DF80037A014 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690244C028EE989B0080E2B4 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		692A099828D16DF80037A014 /* Lab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692A099B28D16DF80037A014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		692A099D28D16DF80037A014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		692A098F28D16DF80037A014 = {
 			isa = PBXGroup;
 			children = (
+				690244C028EE989B0080E2B4 /* CreationViewController.swift */,
 				692A099A28D16DF80037A014 /* Lab1 */,
 				692A09B128D16DFC0037A014 /* Lab1Tests */,
 				692A09BB28D16DFC0037A014 /* Lab1UITests */,
@@ -261,6 +264,7 @@
 				692A09A028D16DF80037A014 /* ViewController.swift in Sources */,
 				692A099C28D16DF80037A014 /* AppDelegate.swift in Sources */,
 				692A099E28D16DF80037A014 /* SceneDelegate.swift in Sources */,
+				690244C128EE989B0080E2B4 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
