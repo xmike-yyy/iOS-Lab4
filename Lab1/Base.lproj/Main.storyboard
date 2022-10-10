@@ -40,12 +40,30 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLo-7X-IKE">
-                                <rect key="frame" x="173" y="620" width="69" height="49"/>
+                                <rect key="frame" x="173" y="747" width="69" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
                                 <connections>
                                     <segue destination="KrR-nN-Nf4" kind="presentation" id="gNs-dd-btt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v44-Ak-3e0">
+                                <rect key="frame" x="303" y="756" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQr-hr-FfO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-jJ-wPp">
+                                <rect key="frame" x="40" y="756" width="77" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOO-Uv-vkf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +79,8 @@
                         <outlet property="backLabel" destination="tHX-DK-Ixp" id="S3w-rQ-r5Q"/>
                         <outlet property="card" destination="AOm-ZV-Kn2" id="VHA-ap-QPE"/>
                         <outlet property="frontLabel" destination="6cp-Mx-mab" id="tZz-6U-j2o"/>
+                        <outlet property="nextButton" destination="v44-Ak-3e0" id="YTr-Uw-WJy"/>
+                        <outlet property="prevButton" destination="Rrs-jJ-wPp" id="EqL-Gu-NeC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,7 +90,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1219" y="93"/>
+            <point key="canvasLocation" x="-1220.2898550724638" y="92.410714285714278"/>
         </scene>
         <!--Creation View Controller-->
         <scene sceneID="SkV-Hp-Yzu">
